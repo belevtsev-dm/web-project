@@ -5,10 +5,16 @@
     <meta charset="utf-8" />
     <title>CatPhotoApp</title>
     <style>
-      figure {
+      figure{
         display: inline-block;
         border: 10px solid rgb(64, 53, 53);
         border-radius: 3%;
+      }
+      form {
+        /* display: inline-block; */
+        background-color: lightblue;
+        width: 30%;
+        padding: 10px;
       }
       figcaption {
         background-color: rgb(64, 53, 53);
@@ -127,13 +133,15 @@
             />
             <label for="energetic">Energetic</label>
           </fieldset>
-          <input
-            type="text"
-            name="catphotourl"
-            placeholder="cat photo URL"
-            required
-          />
-          <button type="submit">Submit</button>
+          <fieldset>
+            <input
+              type="text"
+              name="catphotourl"
+              placeholder="cat photo URL"
+              required
+            />
+            <button type="submit">Submit</button>
+          </fieldset>
         </form>
       </section>
     </main>
